@@ -1,0 +1,166 @@
+/* Midterm Responsive CSS    */
+/* Written by Nicholas Price */
+/* Date submitted: 10/23/15  */
+
+
+/* Apply to entire document */
+
+* {  
+    padding:            0;
+    margin:             0;
+    box-sizing:         border-box;   
+}
+
+
+body {
+    font-size:          0.8rem;
+    background-color:   lightsteelblue;
+    font-family:        Helvetica, Calibri, sans-serif;
+    width:              100%;
+}
+
+p {
+    line-height:        1.4;
+}
+
+header {
+    text-align:         center;
+    vertical-align:     middle;
+    background-image:   url(http://lorempixel.com/960/200/cats/);
+    line-height:        2;
+    color:              ghostwhite ;
+    text-shadow:        2px 2px 4px #000;
+}
+
+.masthead {
+    margin-bottom:      1rem;
+}
+
+.wrapper {
+    padding-left:       1rem;
+    padding-right:      1rem;
+}
+
+.mainnav ul {
+    display:            block;
+    list-style:         none;
+    font-size:          130%;
+    width:              100%;
+    line-height:        3rem;
+}
+
+.mainnav a,
+.mainnav a:visited {
+    text-decoration:    none;
+    display:            block;
+    font-size:          1.5rem;
+    background-color:   royalblue;
+    color:              #EEE;
+    text-align:         center;
+}
+.mainnav a:hover,
+.mainnav a:active {
+    background-color:   #EEE;
+    color:              royalblue;
+}
+
+.primary {
+    padding-bottom:     1rem;
+    width:              100%;
+}
+
+.side {
+    width:              100%;
+}
+
+.footer {
+    clear:              both;
+    background-color:   cornflowerblue;
+    width:              100%;
+}
+
+
+
+
+
+/* Media Queries! */
+
+/* Mid-Size Screen or Tablet */
+
+@media screen and (min-width: 35rem) and (max-width: 60rem){
+  
+    body {
+        font-size:      1rem;
+    }
+
+    .mainnav {
+        display:        inline;
+        width:          100%;
+    }
+    
+    header {
+        font-size:      1.3rem;
+        line-height:    2.5;
+    }
+    
+    .mainnav li {
+        width:          25%;
+        float:          left;
+        font-size:      4rem;
+    }
+    
+    .primary {
+        width:          63%;
+        float:          left;
+        padding:        1rem;
+    }
+    
+    .side {
+        width:          37%;
+        float:          left;
+        padding:        1rem;
+    }
+    
+}
+
+
+/* Large screen */
+
+@media screen and (min-width: 60rem){
+  
+    body {
+        font-size:      1.5rem;
+    }
+    
+    .masthead { 
+        width:          100%;
+    }
+    
+    header {
+        font-size:      1.5rem;
+        line-height:    3;
+    }
+    
+    .mainnav {
+        display:        inline;
+        float:          left;
+        width:          25%;
+    }
+  
+    .primary {
+        width:          50%;
+        float:          left;
+        padding:        1rem;
+        
+        -webkit-column-count:   2;
+        -moz-column-count:      2;
+        column-count:           2;
+    }
+    
+    .side {
+        width:          25%;
+        float:          left;
+        padding:        1rem;
+    }
+
+}
